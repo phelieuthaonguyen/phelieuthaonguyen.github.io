@@ -114,6 +114,25 @@
       background: var(--primary-light);
       transform: translateY(-1px);
     }
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      border-radius: 12px;
+      padding: 8px 0;
+      min-width: 220px;
+    }
+    .dropdown-item {
+      padding: 10px 20px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.2s;
+    }
+    .dropdown-item:hover {
+      background: var(--light);
+      color: var(--primary);
+      padding-left: 24px;
+    }
 
     /* ===== HERO ===== */
     .hero-section {
@@ -897,12 +916,23 @@
           }
         }
 
-        // Build menu items
+        // Build menu items (hỗ trợ submenu/dropdown)
         const navMenu = document.getElementById('nav-menu');
         if (navMenu && config.menu) {
-          let html = config.menu.map(item => 
-            `<li class="nav-item"><a class="nav-link${item.active ? ' active' : ''}" href="${item.url}">${item.label}</a></li>`
-          ).join('');
+          let html = config.menu.map(item => {
+            if (item.children && item.children.length > 0) {
+              // Dropdown menu
+              const subItems = item.children.map(child => 
+                `<li><a class="dropdown-item" href="${child.url}">${child.label}</a></li>`
+              ).join('');
+              return `<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle${item.active ? ' active' : ''}" href="${item.url}" role="button" data-bs-toggle="dropdown" aria-expanded="false">${item.label}</a>
+                <ul class="dropdown-menu">${subItems}</ul>
+              </li>`;
+            } else {
+              return `<li class="nav-item"><a class="nav-link${item.active ? ' active' : ''}" href="${item.url}">${item.label}</a></li>`;
+            }
+          }).join('');
 
           // Add CTA button
           if (config.cta) {
