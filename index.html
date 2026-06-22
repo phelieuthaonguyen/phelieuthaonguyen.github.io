@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phế Liệu Thảo Nguyên - Thu Mua Phế Liệu Giá Cao Tại TP.HCM</title>
-  <meta name="description" content="Phế Liệu Thảo Nguyên chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao. Thanh toán nhanh, cân đúng, phục vụ tận nơi tại TP.HCM và các tỉnh lân cận.">
-  <meta name="keywords" content="thu mua phế liệu, phế liệu giá cao, thu mua sắt vụn, thu mua đồng, thu mua nhôm, phế liệu TP.HCM">
+  <title>Thu Mua Phế Liệu Thảo Nguyên - Giá Cao, Thu Mua Tận Nơi Toàn Quốc</title>
+  <meta name="description" content="Phế Liệu Thảo Nguyên chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao. Thu mua tận nơi, thanh toán ngay. Hoa hồng cao cho người giới thiệu. Hotline: 0961.58.58.85">
+  <meta name="keywords" content="thu mua phế liệu, phế liệu giá cao, thu mua phế liệu đồng, thu mua phế liệu sắt, thu mua phế liệu nhôm, thu mua phế liệu inox, phế liệu Bắc Ninh, phế liệu Hà Nội">
   <link rel="canonical" href="https://phelieuthaonguyen.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Phế Liệu Thảo Nguyên - Thu Mua Phế Liệu Giá Cao">
-  <meta property="og:description" content="Chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao. Thanh toán nhanh, cân đúng, phục vụ tận nơi.">
+  <meta property="og:title" content="Thu Mua Phế Liệu Thảo Nguyên - Giá Cao, Thu Mua Tận Nơi">
+  <meta property="og:description" content="Chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao. Thu mua tận nơi, thanh toán ngay. Hoa hồng cao cho người giới thiệu.">
   <meta property="og:url" content="https://phelieuthaonguyen.com/">
   <meta property="og:site_name" content="Phế Liệu Thảo Nguyên">
+  <meta property="og:image" content="https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png">
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,18 +25,18 @@
 
   <style>
     :root {
-      --primary: #1B5E20;
-      --primary-light: #4CAF50;
-      --primary-dark: #0D3B0F;
-      --accent: #FF6F00;
-      --accent-light: #FFA040;
-      --dark: #1a1a2e;
-      --light: #f8faf8;
+      --primary: #C62828;
+      --primary-light: #EF5350;
+      --primary-dark: #8E0000;
+      --accent: #2E7D32;
+      --accent-light: #4CAF50;
+      --dark: #1a1a1a;
+      --light: #fdf5f5;
       --text: #2d2d2d;
       --muted: #666;
-      --border: #e0e8e0;
-      --shadow: 0 4px 20px rgba(27, 94, 32, 0.08);
-      --shadow-hover: 0 8px 40px rgba(27, 94, 32, 0.15);
+      --border: #f0dede;
+      --shadow: 0 4px 20px rgba(198, 40, 40, 0.08);
+      --shadow-hover: 0 8px 40px rgba(198, 40, 40, 0.15);
       --radius: 16px;
     }
 
@@ -58,44 +59,59 @@
     .navbar-main {
       background: #fff;
       box-shadow: 0 2px 20px rgba(0,0,0,0.06);
-      padding: 12px 0;
+      padding: 10px 0;
       transition: all 0.3s;
     }
     .navbar-main.scrolled {
-      padding: 8px 0;
+      padding: 6px 0;
       box-shadow: 0 2px 30px rgba(0,0,0,0.1);
     }
     .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .navbar-brand-text {
       font-family: 'Quicksand', sans-serif;
       font-weight: 700;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       color: var(--primary) !important;
+      line-height: 1.2;
     }
-    .navbar-brand i {
-      color: var(--accent);
-      margin-right: 8px;
+    .navbar-brand-text small {
+      display: block;
+      font-size: 0.7rem;
+      color: var(--muted);
+      font-weight: 500;
     }
     .nav-link {
       font-weight: 500;
       color: var(--text) !important;
-      padding: 8px 16px !important;
+      padding: 8px 14px !important;
       border-radius: 8px;
       transition: all 0.2s;
+      font-size: 0.92rem;
     }
     .nav-link:hover, .nav-link.active {
       color: var(--primary) !important;
       background: var(--light);
     }
     .btn-nav-cta {
-      background: var(--accent);
+      background: var(--primary);
       color: #fff !important;
       font-weight: 600;
-      padding: 10px 24px !important;
+      padding: 10px 20px !important;
       border-radius: 30px;
       transition: all 0.3s;
     }
     .btn-nav-cta:hover {
-      background: var(--accent-light);
+      background: var(--primary-light);
       transform: translateY(-1px);
     }
 
@@ -123,7 +139,7 @@
       left: -10%;
       width: 400px;
       height: 400px;
-      background: radial-gradient(circle, rgba(255,111,0,0.1) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(46,125,50,0.1) 0%, transparent 70%);
       border-radius: 50%;
     }
     .hero-title {
@@ -134,13 +150,13 @@
       line-height: 1.2;
     }
     .hero-title span {
-      color: var(--accent-light);
+      color: #FFEB3B;
     }
     .hero-subtitle {
       font-size: 1.15rem;
-      color: rgba(255,255,255,0.85);
+      color: rgba(255,255,255,0.9);
       margin-bottom: 32px;
-      max-width: 560px;
+      max-width: 580px;
     }
     .hero-stats {
       display: flex;
@@ -153,7 +169,7 @@
     .hero-stat-number {
       font-size: 2rem;
       font-weight: 800;
-      color: var(--accent-light);
+      color: #FFEB3B;
       display: block;
     }
     .hero-stat-label {
@@ -181,10 +197,10 @@
       background: var(--accent-light);
       color: #fff;
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(255,111,0,0.3);
+      box-shadow: 0 8px 25px rgba(46,125,50,0.3);
     }
     .btn-hero-outline {
-      border: 2px solid rgba(255,255,255,0.4);
+      border: 2px solid rgba(255,255,255,0.5);
       color: #fff;
     }
     .btn-hero-outline:hover {
@@ -204,6 +220,9 @@
       font-size: 2rem;
       margin-bottom: 12px;
       color: var(--dark);
+    }
+    .section-title span {
+      color: var(--primary);
     }
     .section-subtitle {
       color: var(--muted);
@@ -261,7 +280,8 @@
       transition: all 0.2s;
     }
     .why-card:hover {
-      background: var(--light);
+      background: #fff;
+      box-shadow: var(--shadow);
     }
     .why-icon {
       width: 48px;
@@ -303,7 +323,7 @@
       width: 100%;
       height: 180px;
       object-fit: cover;
-      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      background: linear-gradient(135deg, #ffebee, #ffcdd2);
     }
     .post-card-body {
       padding: 20px;
@@ -346,7 +366,7 @@
       margin-bottom: 16px;
     }
     .cta-section p {
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.85);
       margin-bottom: 30px;
     }
 
@@ -367,7 +387,7 @@
       transition: color 0.2s;
     }
     .footer a:hover {
-      color: var(--accent-light);
+      color: var(--primary-light);
     }
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.1);
@@ -383,7 +403,7 @@
       margin-bottom: 12px;
     }
     .footer-contact-item i {
-      color: var(--accent-light);
+      color: var(--primary-light);
       width: 20px;
     }
 
@@ -415,7 +435,7 @@
       color: #fff;
     }
     .floating-btn-phone {
-      background: var(--primary);
+      background: var(--accent);
     }
     .floating-btn-zalo {
       background: #0068FF;
@@ -427,6 +447,7 @@
       .hero-stats { gap: 24px; flex-wrap: wrap; }
       .section { padding: 50px 0; }
       .section-title { font-size: 1.6rem; }
+      .navbar-brand img { width: 40px; height: 40px; }
     }
   </style>
 
@@ -436,42 +457,74 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Phế Liệu Thảo Nguyên",
-    "description": "Chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao tại TP.HCM và các tỉnh lân cận.",
+    "legalName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ 1985",
+    "description": "Chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao. Thu mua tận nơi toàn quốc.",
     "url": "https://phelieuthaonguyen.com",
+    "logo": "https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png",
+    "image": "https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png",
     "telephone": "+84961585885",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "TP. Hồ Chí Minh",
-      "addressCountry": "VN"
-    },
-    "openingHours": "Mo-Su 07:00-21:00",
-    "priceRange": "$$"
+    "taxID": "0111304324",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "name": "Văn phòng chính",
+        "streetAddress": "Số nhà 10B, Tổ 8, Khu Chung Cư Tây Trà",
+        "addressLocality": "Phường Hoàng Mai",
+        "addressRegion": "Hà Nội",
+        "addressCountry": "VN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Cơ sở 1",
+        "addressLocality": "Đa Hội",
+        "addressRegion": "Bắc Ninh",
+        "addressCountry": "VN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Cơ sở 2",
+        "addressLocality": "Khu Công Nghiệp Đồng Văn",
+        "addressRegion": "Hà Nam",
+        "addressCountry": "VN"
+      }
+    ],
+    "openingHours": "Mo-Su 07:00-20:00",
+    "priceRange": "$$",
+    "areaServed": "Toàn quốc",
+    "sameAs": [
+      "https://phelieuthaonguyen.com"
+    ]
   }
   </script>
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <!-- MENU CÓ THỂ TÙY CHỈNH: Thêm/xóa/sửa các mục menu bên dưới -->
+  <!-- MENU TÙY CHỈNH: Thêm/xóa/sửa các mục <li> bên dưới -->
   <nav class="navbar navbar-expand-lg navbar-main fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <i class="fas fa-recycle"></i> Phế Liệu Thảo Nguyên
+        <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png" alt="Logo Phế Liệu Thảo Nguyên">
+        <span class="navbar-brand-text">
+          PHẾ LIỆU THẢO NGUYÊN
+          <small>Thu mua phế liệu giá cao toàn quốc</small>
+        </span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-center gap-1">
-          <!-- TÙY CHỈNH MENU: Thêm hoặc xóa <li> để thay đổi menu -->
+          <!-- TÙY CHỈNH MENU TẠI ĐÂY -->
           <li class="nav-item"><a class="nav-link active" href="/">Trang chủ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#dich-vu">Dịch vụ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tai-sao-chon">Về chúng tôi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#bai-viet">Bài viết</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gioi-thieu">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dich-vu">Danh mục thu mua</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bang-gia">Bảng giá</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bai-viet">Tin tức</a></li>
           <li class="nav-item"><a class="nav-link" href="#lien-he">Liên hệ</a></li>
           <li class="nav-item ms-2">
             <a class="nav-link btn-nav-cta" href="tel:0961585885">
-              <i class="fas fa-phone"></i> 0961 58 58 85
+              <i class="fas fa-phone"></i> 0961.58.58.85
             </a>
           </li>
         </ul>
@@ -486,18 +539,18 @@
         <div class="col-lg-7">
           <h1 class="hero-title">
             Thu Mua Phế Liệu <span>Giá Cao</span><br>
-            Thanh Toán Ngay
+            Toàn Quốc - Thanh Toán Ngay
           </h1>
           <p class="hero-subtitle">
-            Phế Liệu Thảo Nguyên chuyên thu mua tất cả các loại phế liệu sắt, đồng, nhôm, inox, hợp kim. 
-            Cân đúng, giá cao, thanh toán tại chỗ. Phục vụ tận nơi tại TP.HCM và các tỉnh lân cận.
+            <strong>Phế Liệu Thảo Nguyên</strong> chuyên thu mua tất cả các mặt hàng phế liệu với giá cao nhất thị trường. 
+            Thu mua tận nơi, thanh toán ngay, chiết khấu hoa hồng cao cho người giới thiệu.
           </p>
           <div class="d-flex flex-wrap gap-3">
             <a href="tel:0961585885" class="btn-hero btn-hero-primary">
               <i class="fas fa-phone"></i> Gọi báo giá ngay
             </a>
-            <a href="#dich-vu" class="btn-hero btn-hero-outline">
-              <i class="fas fa-arrow-down"></i> Xem dịch vụ
+            <a href="https://zalo.me/0961585885" class="btn-hero btn-hero-outline" target="_blank">
+              <i class="fas fa-comment-dots"></i> Chat Zalo
             </a>
           </div>
           <div class="hero-stats">
@@ -506,29 +559,77 @@
               <span class="hero-stat-label">Năm kinh nghiệm</span>
             </div>
             <div class="hero-stat">
-              <span class="hero-stat-number">5000+</span>
-              <span class="hero-stat-label">Khách hàng</span>
+              <span class="hero-stat-number">3</span>
+              <span class="hero-stat-label">Cơ sở</span>
             </div>
             <div class="hero-stat">
               <span class="hero-stat-number">24/7</span>
               <span class="hero-stat-label">Hỗ trợ</span>
             </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">500tr</span>
+              <span class="hero-stat-label">Hoa hồng</span>
+            </div>
           </div>
         </div>
         <div class="col-lg-5 d-none d-lg-block text-center">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=500&fit=crop" 
-               alt="Thu mua phế liệu" 
-               style="border-radius: 20px; max-width: 400px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+          <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png" 
+               alt="Phế Liệu Thảo Nguyên" 
+               style="max-width: 300px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GIỚI THIỆU ===== -->
+  <section class="section" id="gioi-thieu">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">Giới Thiệu <span>Thảo Nguyên</span></h2>
+          <p style="font-size: 1.05rem;">
+            <strong>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ 1985</strong> (tiền thân là Công ty Thảo Nguyên) có kinh nghiệm trên 10 năm trong lĩnh vực thu mua phế liệu. Chúng tôi cam kết mang đến cho Quý khách hàng dịch vụ uy tín, giá cao và thanh toán nhanh chóng.
+          </p>
+          <ul class="list-unstyled" style="font-size: 0.95rem;">
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Thu mua tất cả mặt hàng phế liệu toàn quốc</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Giá cao - Cân đúng - Thanh toán ngay</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Hoa hồng lên đến 500 triệu cho người giới thiệu</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Đội xe tự bốc xếp, vệ sinh sạch sẽ</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Làm việc 7h-20h hàng ngày (cả T7 & CN)</li>
+          </ul>
+          <div class="mt-3 p-3 bg-light rounded">
+            <small class="text-muted">
+              <strong>MST:</strong> 0111304324<br>
+              <strong>Văn phòng:</strong> Số 10B, Tổ 8, KCC Tây Trà, Hoàng Mai, Hà Nội<br>
+              <strong>CS1:</strong> Đa Hội, Bắc Ninh | <strong>CS2:</strong> KCN Đồng Văn, Phủ Lý, Hà Nam
+            </small>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/07/phe-lieu-sat-2-1.jpg" alt="Phế liệu sắt" class="img-fluid rounded" style="height:200px; object-fit:cover; width:100%;">
+            </div>
+            <div class="col-6">
+              <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/07/phe-lieu-dong-4.jpg" alt="Phế liệu đồng" class="img-fluid rounded" style="height:200px; object-fit:cover; width:100%;">
+            </div>
+            <div class="col-6">
+              <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/07/phe-lieu-Inox-5.jpg" alt="Phế liệu inox" class="img-fluid rounded" style="height:200px; object-fit:cover; width:100%;">
+            </div>
+            <div class="col-6">
+              <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/07/phe-lieu-nhom-6.jpg" alt="Phế liệu nhôm" class="img-fluid rounded" style="height:200px; object-fit:cover; width:100%;">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== SERVICES ===== -->
-  <section class="section" id="dich-vu">
+  <section class="section section-light" id="dich-vu">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title">Dịch Vụ Thu Mua</h2>
+        <h2 class="section-title">Danh Mục <span>Thu Mua</span></h2>
         <p class="section-subtitle">Chúng tôi thu mua tất cả các loại phế liệu với giá cạnh tranh nhất thị trường</p>
       </div>
       <div class="row g-4">
@@ -536,7 +637,7 @@
           <div class="service-card">
             <div class="service-icon"><i class="fas fa-industry"></i></div>
             <h4>Phế liệu Sắt - Thép</h4>
-            <p>Thu mua sắt vụn, sắt thép xây dựng, sắt công nghiệp, ống thép, tôn cũ các loại</p>
+            <p>Sắt vụn, sắt thép xây dựng, sắt công nghiệp, sắt thừa công trình, tôn cũ các loại</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
@@ -564,14 +665,35 @@
           <div class="service-card">
             <div class="service-icon"><i class="fas fa-cogs"></i></div>
             <h4>Hợp Kim & Kim Loại</h4>
-            <p>Hợp kim đồng, nhôm, kẽm, chì, thiếc, niken và các loại kim loại quý hiếm</p>
+            <p>Hợp kim đồng, kẽm, chì, thiếc, niken, mũi khoan, dao phay, thép gió</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-tshirt"></i></div>
+            <h4>Vải Tồn Kho & Thanh Lý</h4>
+            <p>Thu mua vải tồn kho, vải thanh lý các loại, vải cây, vải khúc số lượng lớn</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-microchip"></i></div>
+            <h4>Linh Kiện Điện Tử</h4>
+            <p>Bo mạch, CPU, RAM, linh kiện máy tính, điện thoại cũ, thiết bị điện tử hỏng</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-recycle"></i></div>
+            <h4>Phế liệu Nhựa</h4>
+            <p>Nhựa PP, PE, PVC, nhựa công nghiệp, thùng nhựa, pallet nhựa cũ</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="service-card">
             <div class="service-icon"><i class="fas fa-building"></i></div>
-            <h4>Phá dỡ Nhà xưởng</h4>
-            <p>Nhận phá dỡ nhà xưởng, kho bãi, thu mua máy móc cũ, dây chuyền sản xuất</p>
+            <h4>Phá dỡ Nhà Xưởng</h4>
+            <p>Nhận tháo dỡ nhà xưởng, kho bãi, máy móc, dây chuyền sản xuất cũ</p>
           </div>
         </div>
       </div>
@@ -579,56 +701,56 @@
   </section>
 
   <!-- ===== WHY CHOOSE US ===== -->
-  <section class="section section-light" id="tai-sao-chon">
+  <section class="section" id="tai-sao-chon">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title">Tại Sao Chọn Thảo Nguyên?</h2>
-        <p class="section-subtitle">Cam kết mang đến dịch vụ thu mua phế liệu chuyên nghiệp và uy tín nhất</p>
+        <h2 class="section-title">Vì Sao Chọn <span>Thảo Nguyên?</span></h2>
+        <p class="section-subtitle">Uy tín số 1 miền Bắc - Đối tác lớn của nhiều khu công nghiệp</p>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="why-card">
             <div class="why-icon"><i class="fas fa-dollar-sign"></i></div>
             <div>
-              <h5>Giá cao nhất thị trường</h5>
-              <p>Luôn cập nhật giá phế liệu hàng ngày, đảm bảo mua với giá cao nhất</p>
+              <h5>Giá cao nhất - Không qua trung gian</h5>
+              <p>Nguồn vốn lớn, xuất hàng trực tiếp, cam kết giá tốt hơn thị trường</p>
             </div>
           </div>
           <div class="why-card">
-            <div class="why-icon"><i class="fas fa-balance-scale"></i></div>
+            <div class="why-icon"><i class="fas fa-truck"></i></div>
             <div>
-              <h5>Cân chính xác, minh bạch</h5>
-              <p>Sử dụng cân điện tử có kiểm định, khách hàng giám sát trực tiếp</p>
+              <h5>Thu mua tận nơi trong 1 giờ</h5>
+              <p>Đội xe chuyên dụng đến trực tiếp, làm việc nhanh gọn trong ngày</p>
             </div>
           </div>
           <div class="why-card">
             <div class="why-icon"><i class="fas fa-money-bill-wave"></i></div>
             <div>
               <h5>Thanh toán ngay tại chỗ</h5>
-              <p>Thanh toán tiền mặt hoặc chuyển khoản ngay sau khi cân xong</p>
+              <p>Tiền mặt hoặc chuyển khoản ngay khi phế liệu được chất lên xe</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="why-card">
-            <div class="why-icon"><i class="fas fa-truck"></i></div>
+            <div class="why-icon"><i class="fas fa-phone-alt"></i></div>
             <div>
-              <h5>Phục vụ tận nơi</h5>
-              <p>Đội xe chuyên dụng, thu gom tận công trình, nhà máy, xưởng sản xuất</p>
+              <h5>Báo giá nhanh sau 1 cuộc gọi</h5>
+              <p>Phản hồi ngay, báo giá chính xác, hỗ trợ 24/7 toàn miền Bắc</p>
             </div>
           </div>
           <div class="why-card">
-            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <div class="why-icon"><i class="fas fa-handshake"></i></div>
             <div>
-              <h5>Nhanh chóng, đúng hẹn</h5>
-              <p>Có mặt trong vòng 1-2 giờ sau khi liên hệ, làm việc cả ngày lễ</p>
+              <h5>Hoa hồng cao - Hợp tác lâu dài</h5>
+              <p>Chính sách hoa hồng lên đến 500 triệu, ưu đãi cho đối tác thân thiết</p>
             </div>
           </div>
           <div class="why-card">
-            <div class="why-icon"><i class="fas fa-leaf"></i></div>
+            <div class="why-icon"><i class="fas fa-hard-hat"></i></div>
             <div>
-              <h5>Bảo vệ môi trường</h5>
-              <p>Xử lý phế liệu đúng quy trình, có giấy phép hoạt động đầy đủ</p>
+              <h5>Nhận tháo dỡ & thanh lý kho xưởng</h5>
+              <p>Tháo dỡ kho bãi, nhà xưởng, máy móc - An toàn, chuyên nghiệp</p>
             </div>
           </div>
         </div>
@@ -636,15 +758,46 @@
     </div>
   </section>
 
+  <!-- ===== BẢNG GIÁ THAM KHẢO ===== -->
+  <section class="section section-light" id="bang-gia">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Bảng Giá <span>Phế Liệu</span> Tham Khảo</h2>
+        <p class="section-subtitle">Giá cập nhật thường xuyên. Liên hệ hotline để được báo giá chính xác nhất.</p>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover bg-white" style="border-radius: 12px; overflow: hidden;">
+          <thead style="background: var(--primary); color: #fff;">
+            <tr>
+              <th>Loại phế liệu</th>
+              <th>Đơn giá (VNĐ/kg)</th>
+              <th>Ghi chú</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Sắt vụn</strong></td><td>6.000 - 8.000</td><td>Tùy loại, số lượng</td></tr>
+            <tr><td><strong>Đồng đỏ</strong></td><td>180.000 - 220.000</td><td>Đồng nguyên chất</td></tr>
+            <tr><td><strong>Đồng vàng</strong></td><td>100.000 - 140.000</td><td>Đồng pha</td></tr>
+            <tr><td><strong>Nhôm</strong></td><td>35.000 - 50.000</td><td>Tùy loại nhôm</td></tr>
+            <tr><td><strong>Inox 304</strong></td><td>30.000 - 40.000</td><td>Inox nguyên chất</td></tr>
+            <tr><td><strong>Chì</strong></td><td>30.000 - 45.000</td><td>Chì bình ắc quy</td></tr>
+            <tr><td><strong>Thiếc</strong></td><td>200.000 - 400.000</td><td>Tùy hàm lượng</td></tr>
+            <tr><td><strong>Niken</strong></td><td>150.000 - 300.000</td><td>Tùy loại</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-center text-muted mt-3"><em>* Giá trên mang tính tham khảo, giá thực tế phụ thuộc số lượng và chất lượng. Gọi <strong>0961.58.58.85</strong> để nhận giá tốt nhất.</em></p>
+    </div>
+  </section>
+
   <!-- ===== LATEST POSTS ===== -->
   <section class="section" id="bai-viet">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title">Bài Viết Mới Nhất</h2>
+        <h2 class="section-title">Tin Tức & <span>Bài Viết</span></h2>
         <p class="section-subtitle">Kiến thức hữu ích về ngành phế liệu, tái chế và bảo vệ môi trường</p>
       </div>
       <div class="row g-4" id="posts-container">
-        <!-- Posts sẽ được load từ posts.json -->
         <div class="col-12 text-center text-muted">
           <p><i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...</p>
         </div>
@@ -656,10 +809,10 @@
   <section class="cta-section">
     <div class="container">
       <h2>Bạn có phế liệu cần bán?</h2>
-      <p class="mx-auto" style="max-width: 500px;">Liên hệ ngay để được báo giá cao nhất. Chúng tôi thu mua tận nơi, thanh toán ngay!</p>
+      <p class="mx-auto" style="max-width: 550px;">Liên hệ ngay để được báo giá cao nhất. Thu mua tận nơi, thanh toán ngay. Hoa hồng cao cho người giới thiệu!</p>
       <div class="d-flex justify-content-center flex-wrap gap-3">
         <a href="tel:0961585885" class="btn-hero btn-hero-primary">
-          <i class="fas fa-phone"></i> 0961 58 58 85
+          <i class="fas fa-phone"></i> 0961.58.58.85
         </a>
         <a href="https://zalo.me/0961585885" class="btn-hero btn-hero-outline" target="_blank">
           <i class="fas fa-comment-dots"></i> Chat Zalo
@@ -673,37 +826,49 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
-          <h5><i class="fas fa-recycle" style="color: var(--accent-light);"></i> Phế Liệu Thảo Nguyên</h5>
-          <p style="font-size: 0.95rem;">Chuyên thu mua phế liệu sắt, đồng, nhôm, inox, hợp kim giá cao. Phục vụ tận nơi tại TP.HCM và các tỉnh lân cận.</p>
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png" alt="Logo" style="width: 50px; height: 50px; border-radius: 50%;">
+            <h5 class="mb-0">Phế Liệu Thảo Nguyên</h5>
+          </div>
+          <p style="font-size: 0.9rem;">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ 1985<br>MST: 0111304324<br>Kinh nghiệm trên 10 năm trong lĩnh vực thu mua phế liệu. Uy tín – Trách nhiệm – Giá cao.</p>
         </div>
         <div class="col-lg-4">
           <h5>Liên hệ</h5>
           <div class="footer-contact-item">
             <i class="fas fa-phone"></i>
-            <a href="tel:0961585885">0961 58 58 85</a>
+            <a href="tel:0961585885">0961.58.58.85</a>
           </div>
           <div class="footer-contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:phelieuthaonguyen@gmail.com">phelieuthaonguyen@gmail.com</a>
+            <i class="fas fa-building"></i>
+            <span>VP: 10B Tổ 8, KCC Tây Trà, Hoàng Mai, Hà Nội</span>
           </div>
           <div class="footer-contact-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>TP. Hồ Chí Minh, Việt Nam</span>
+            <span>CS1: Đa Hội, Bắc Ninh</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>CS2: KCN Đồng Văn, Phủ Lý, Hà Nam</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>7h - 20h hàng ngày (cả T7 & CN)</span>
           </div>
         </div>
         <div class="col-lg-4">
           <h5>Dịch vụ</h5>
-          <ul class="list-unstyled" style="font-size: 0.95rem;">
-            <li class="mb-2"><a href="#">Thu mua phế liệu sắt thép</a></li>
-            <li class="mb-2"><a href="#">Thu mua phế liệu đồng</a></li>
-            <li class="mb-2"><a href="#">Thu mua phế liệu nhôm</a></li>
-            <li class="mb-2"><a href="#">Thu mua phế liệu inox</a></li>
-            <li class="mb-2"><a href="#">Phá dỡ nhà xưởng</a></li>
+          <ul class="list-unstyled" style="font-size: 0.9rem;">
+            <li class="mb-2"><a href="#"><i class="fas fa-angle-right me-1"></i> Thu mua phế liệu sắt thép</a></li>
+            <li class="mb-2"><a href="#"><i class="fas fa-angle-right me-1"></i> Thu mua phế liệu đồng</a></li>
+            <li class="mb-2"><a href="#"><i class="fas fa-angle-right me-1"></i> Thu mua phế liệu nhôm</a></li>
+            <li class="mb-2"><a href="#"><i class="fas fa-angle-right me-1"></i> Thu mua phế liệu inox</a></li>
+            <li class="mb-2"><a href="#"><i class="fas fa-angle-right me-1"></i> Thu mua vải thanh lý</a></li>
+            <li class="mb-2"><a href="#"><i class="fas fa-angle-right me-1"></i> Phá dỡ nhà xưởng</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Phế Liệu Thảo Nguyên. All rights reserved.</p>
+        <p>&copy; 2024 Phế Liệu Thảo Nguyên - CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ 1985. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -732,7 +897,7 @@
       }
     });
 
-    // Smooth scroll for anchor links
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -743,15 +908,13 @@
       });
     });
 
-    // Load latest posts from posts.json
+    // Load latest posts
     async function loadPosts() {
       const container = document.getElementById('posts-container');
       try {
         const response = await fetch('/posts.json');
-        if (!response.ok) throw new Error('No posts found');
+        if (!response.ok) throw new Error('No posts');
         const posts = await response.json();
-        
-        // Show max 6 latest posts
         const latestPosts = posts.slice(0, 6);
         
         if (latestPosts.length === 0) {
@@ -769,25 +932,16 @@
                    </div>`
               }
               <div class="post-card-body">
-                <h3 class="post-card-title">
-                  <a href="${post.url}">${post.title}</a>
-                </h3>
+                <h3 class="post-card-title"><a href="${post.url}">${post.title}</a></h3>
                 ${post.description ? `<p class="post-card-desc">${post.description}</p>` : ''}
               </div>
             </div>
           </div>
         `).join('');
       } catch (error) {
-        // Fallback: show placeholder posts
-        container.innerHTML = `
-          <div class="col-12 text-center text-muted">
-            <p>Chưa có bài viết. Các bài viết mới sẽ hiển thị tại đây.</p>
-          </div>
-        `;
+        container.innerHTML = '<div class="col-12 text-center text-muted"><p>Các bài viết mới sẽ hiển thị tại đây.</p></div>';
       }
     }
-
-    // Load posts on page load
     loadPosts();
   </script>
 </body>
