@@ -8,7 +8,21 @@
   "menu": [
     {"label": "Trang chủ", "url": "/", "active": true},
     {"label": "Giới thiệu", "url": "#gioi-thieu"},
-    {"label": "Danh mục thu mua", "url": "#dich-vu"},
+    {
+      "label": "Danh mục thu mua",
+      "url": "#dich-vu",
+      "children": [
+        {"label": "Phế liệu Sắt - Thép", "url": "/thu-mua-phe-lieu-sat.html"},
+        {"label": "Phế liệu Đồng", "url": "/thu-mua-phe-lieu-dong.html"},
+        {"label": "Phế liệu Nhôm", "url": "/thu-mua-phe-lieu-nhom.html"},
+        {"label": "Phế liệu Inox", "url": "/thu-mua-phe-lieu-inox.html"},
+        {"label": "Hợp kim & Kim loại", "url": "/thu-mua-hop-kim.html"},
+        {"label": "Vải tồn kho", "url": "/thu-mua-vai-ton-kho.html"},
+        {"label": "Linh kiện điện tử", "url": "/thu-mua-linh-kien-dien-tu.html"},
+        {"label": "Phế liệu Nhựa", "url": "/thu-mua-phe-lieu-nhua.html"},
+        {"label": "Phá dỡ nhà xưởng", "url": "/pha-do-nha-xuong.html"}
+      ]
+    },
     {"label": "Bảng giá", "url": "#bang-gia"},
     {"label": "Tin tức", "url": "#bai-viet"},
     {"label": "Liên hệ", "url": "#lien-he"}
