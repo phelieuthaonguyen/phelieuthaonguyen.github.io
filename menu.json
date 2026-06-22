@@ -1,0 +1,21 @@
+{
+  "brand": {
+    "name": "PHẾ LIỆU THẢO NGUYÊN",
+    "slogan": "Thu mua phế liệu giá cao toàn quốc",
+    "logo": "https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png",
+    "url": "/"
+  },
+  "menu": [
+    {"label": "Trang chủ", "url": "/", "active": true},
+    {"label": "Giới thiệu", "url": "#gioi-thieu"},
+    {"label": "Danh mục thu mua", "url": "#dich-vu"},
+    {"label": "Bảng giá", "url": "#bang-gia"},
+    {"label": "Tin tức", "url": "#bai-viet"},
+    {"label": "Liên hệ", "url": "#lien-he"}
+  ],
+  "cta": {
+    "label": "0961.58.58.85",
+    "url": "tel:0961585885",
+    "icon": "fas fa-phone"
+  }
+}
