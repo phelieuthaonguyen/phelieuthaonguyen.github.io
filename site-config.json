@@ -1,0 +1,66 @@
+{
+  "breadcrumb": {
+    "home": {
+      "label": "Trang chủ",
+      "url": "/",
+      "icon": "fas fa-home"
+    },
+    "blog": {
+      "label": "Tin tức",
+      "url": "/tin-tuc.html"
+    },
+    "categories": {
+      "Phế liệu sắt thép": {
+        "label": "Phế liệu Sắt Thép",
+        "url": "/tin-tuc.html?cat=Phế liệu sắt thép"
+      },
+      "Phế liệu đồng": {
+        "label": "Phế liệu Đồng",
+        "url": "/tin-tuc.html?cat=Phế liệu đồng"
+      },
+      "Phế liệu nhôm": {
+        "label": "Phế liệu Nhôm",
+        "url": "/tin-tuc.html?cat=Phế liệu nhôm"
+      },
+      "Phế liệu inox": {
+        "label": "Phế liệu Inox",
+        "url": "/tin-tuc.html?cat=Phế liệu inox"
+      },
+      "Phế liệu hợp kim": {
+        "label": "Phế liệu Hợp Kim",
+        "url": "/tin-tuc.html?cat=Phế liệu hợp kim"
+      },
+      "Phế liệu giấy": {
+        "label": "Phế liệu Giấy",
+        "url": "/tin-tuc.html?cat=Phế liệu giấy"
+      },
+      "Phế liệu nhựa": {
+        "label": "Phế liệu Nhựa",
+        "url": "/tin-tuc.html?cat=Phế liệu nhựa"
+      },
+      "Vải tồn kho": {
+        "label": "Vải Tồn Kho",
+        "url": "/tin-tuc.html?cat=Vải tồn kho"
+      },
+      "Linh kiện điện tử": {
+        "label": "Linh Kiện Điện Tử",
+        "url": "/tin-tuc.html?cat=Linh kiện điện tử"
+      },
+      "Tin tức": {
+        "label": "Tin tức",
+        "url": "/tin-tuc.html?cat=Tin tức"
+      }
+    }
+  },
+  "site": {
+    "name": "Phế Liệu Thảo Nguyên",
+    "company": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ 1985",
+    "phone": "0961585885",
+    "phone_display": "0961.58.58.85",
+    "zalo": "https://zalo.me/0961585885",
+    "email": "",
+    "address": "10B Tổ 8, KCC Tây Trà, Hoàng Mai, Hà Nội",
+    "mst": "0111304324",
+    "logo": "https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png"
+  }
+}
