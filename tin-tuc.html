@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin tức & Bài viết - Phế Liệu Thảo Nguyên</title>
+  <meta name="description" content="Cập nhật tin tức mới nhất về thu mua phế liệu, giá phế liệu hôm nay, kiến thức ngành tái chế từ Phế Liệu Thảo Nguyên.">
+  <link rel="canonical" href="https://phelieuthaonguyen.github.io/tin-tuc.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tin tức & Bài viết - Phế Liệu Thảo Nguyên">
+  <meta property="og:description" content="Cập nhật tin tức mới nhất về thu mua phế liệu, giá phế liệu hôm nay, kiến thức ngành tái chế.">
+  <meta property="og:url" content="https://phelieuthaonguyen.github.io/tin-tuc.html">
+  <meta property="og:site_name" content="Phế Liệu Thảo Nguyên">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #C62828;
+      --primary-light: #EF5350;
+      --primary-dark: #8E0000;
+      --accent: #2E7D32;
+      --accent-light: #4CAF50;
+      --dark: #1a1a1a;
+      --light: #fdf5f5;
+      --text: #2d2d2d;
+      --muted: #666;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; background: #f9f9f9; }
+    h1, h2, h3, h4, h5 { font-family: 'Quicksand', sans-serif; font-weight: 700; }
+
+    /* Navbar */
+    .navbar-main { background: #fff; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 10px 0; }
+    .navbar-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .navbar-brand img { width: 45px; height: 45px; border-radius: 50%; }
+    .navbar-brand-text { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1rem; color: var(--primary) !important; line-height: 1.2; }
+    .navbar-brand-text small { display: block; font-size: 0.65rem; color: var(--muted); font-weight: 500; }
+    .nav-link { font-weight: 500; color: var(--text) !important; padding: 8px 14px !important; border-radius: 8px; font-size: 0.9rem; }
+    .nav-link:hover { color: var(--primary) !important; background: var(--light); }
+    .btn-nav-cta { background: var(--primary); color: #fff !important; font-weight: 600; padding: 10px 20px !important; border-radius: 30px; }
+    .dropdown-menu { border: none; box-shadow: 0 8px 30px rgba(0,0,0,0.12); border-radius: 12px; padding: 8px 0; min-width: 220px; }
+    .dropdown-item { padding: 10px 20px; font-size: 0.9rem; }
+    .dropdown-item:hover { background: var(--light); color: var(--primary); }
+
+    /* Page Header */
+    .page-header { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); padding: 50px 0; color: #fff; text-align: center; }
+    .page-header h1 { font-size: 2.2rem; margin-bottom: 12px; }
+    .page-header p { font-size: 1rem; opacity: 0.9; }
+
+    /* Category Tabs */
+    .category-tabs { background: #fff; padding: 16px 0; border-bottom: 1px solid #eee; position: sticky; top: 68px; z-index: 100; }
+    .cat-btn { display: inline-block; padding: 8px 18px; border-radius: 30px; font-size: 0.88rem; font-weight: 500; color: var(--text); background: #f5f5f5; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; }
+    .cat-btn:hover { background: var(--light); color: var(--primary); }
+    .cat-btn.active { background: var(--primary); color: #fff; }
+
+    /* Post Cards */
+    .posts-grid { padding: 40px 0; }
+    .post-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; transition: all 0.3s; height: 100%; display: flex; flex-direction: column; }
+    .post-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .post-card-img { width: 100%; height: 200px; object-fit: cover; background: var(--light); }
+    .post-card-img-placeholder { width: 100%; height: 200px; background: linear-gradient(135deg, var(--light), #f5e6e6); display: flex; align-items: center; justify-content: center; }
+    .post-card-img-placeholder i { font-size: 3rem; color: var(--primary-light); opacity: 0.4; }
+    .post-card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .post-card-category { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .post-card-title { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-decoration: none; line-height: 1.4; }
+    .post-card-title:hover { color: var(--primary); }
+    .post-card-desc { font-size: 0.88rem; color: var(--muted); flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 14px; }
+    .post-card-meta { font-size: 0.8rem; color: var(--muted); display: flex; align-items: center; gap: 12px; }
+    .post-card-meta i { color: var(--primary-light); }
+
+    /* Pagination */
+    .pagination-wrapper { text-align: center; padding: 20px 0 60px; }
+    .pagination .page-link { color: var(--primary); border-radius: 8px; margin: 0 3px; border: 1px solid #eee; }
+    .pagination .page-item.active .page-link { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+    /* Empty State */
+    .empty-state { text-align: center; padding: 80px 20px; }
+    .empty-state i { font-size: 4rem; color: #ddd; margin-bottom: 20px; }
+    .empty-state h3 { color: var(--muted); font-size: 1.2rem; }
+
+    /* Footer */
+    .footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 40px 0 20px; }
+    .footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .footer a:hover { color: var(--primary-light); }
+
+    /* Floating CTA */
+    .floating-cta { position: fixed; bottom: 24px; right: 24px; z-index: 999; display: flex; flex-direction: column; gap: 12px; }
+    .floating-btn { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.3rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); text-decoration: none; }
+    .floating-btn:hover { transform: scale(1.1); color: #fff; }
+    .floating-btn-phone { background: var(--accent); }
+    .floating-btn-zalo { background: #0068FF; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-main sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="https://phelieuthaonguyen.com/wp-content/uploads/2025/08/logo-thao-nguyen.png" alt="Logo">
+        <span class="navbar-brand-text">PHẾ LIỆU THẢO NGUYÊN<small>Thu mua phế liệu giá cao toàn quốc</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1" id="nav-menu"></ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1><i class="fas fa-newspaper"></i> Tin Tức & Bài Viết</h1>
+      <p>Cập nhật kiến thức ngành phế liệu, giá thu mua và tin tức mới nhất</p>
+    </div>
+  </section>
+
+  <!-- Category Tabs -->
+  <section class="category-tabs">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-2" id="category-tabs">
+        <button class="cat-btn active" data-cat="all">Tất cả</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts Grid -->
+  <section class="posts-grid">
+    <div class="container">
+      <div class="row g-4" id="posts-grid"></div>
+      <div id="empty-state" style="display:none;">
+        <div class="empty-state">
+          <i class="fas fa-folder-open"></i>
+          <h3>Chưa có bài viết trong danh mục này</h3>
+          <p class="text-muted">Hãy quay lại sau để xem bài viết mới nhất</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  <div class="pagination-wrapper">
+    <nav>
+      <ul class="pagination justify-content-center" id="pagination"></ul>
+    </nav>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 style="color:#fff;">Phế Liệu Thảo Nguyên</h5>
+          <p style="font-size:0.9rem;">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ 1985<br>MST: 0111304324<br>Hotline: 0961.58.58.85</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p style="font-size:0.9rem;">VP: 10B Tổ 8, KCC Tây Trà, Hoàng Mai, Hà Nội<br>CS1: Đa Hội, Bắc Ninh | CS2: KCN Đồng Văn, Hà Nam<br>Làm việc: 7h-20h (cả T7 & CN)</p>
+        </div>
+      </div>
+      <div class="text-center mt-3 pt-3" style="border-top:1px solid rgba(255,255,255,0.1);font-size:0.85rem;">
+        &copy; 2024 Phế Liệu Thảo Nguyên. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta">
+    <a href="tel:0961585885" class="floating-btn floating-btn-phone"><i class="fas fa-phone"></i></a>
+    <a href="https://zalo.me/0961585885" class="floating-btn floating-btn-zalo" target="_blank"><i class="fas fa-comment-dots"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const POSTS_PER_PAGE = 12;
+    let allPosts = [];
+    let filteredPosts = [];
+    let currentPage = 1;
+    let currentCategory = 'all';
+
+    // Load menu
+    async function loadMenu() {
+      try {
+        const resp = await fetch('/menu.json');
+        const config = await resp.json();
+        const navMenu = document.getElementById('nav-menu');
+        if (navMenu && config.menu) {
+          let html = config.menu.map(item => {
+            if (item.children && item.children.length > 0) {
+              const subItems = item.children.map(c => `<li><a class="dropdown-item" href="${c.url}">${c.label}</a></li>`).join('');
+              return `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="${item.url}" role="button" data-bs-toggle="dropdown">${item.label}</a><ul class="dropdown-menu">${subItems}</ul></li>`;
+            }
+            return `<li class="nav-item"><a class="nav-link" href="${item.url}">${item.label}</a></li>`;
+          }).join('');
+          if (config.cta) html += `<li class="nav-item ms-2"><a class="nav-link btn-nav-cta" href="${config.cta.url}"><i class="${config.cta.icon}"></i> ${config.cta.label}</a></li>`;
+          navMenu.innerHTML = html;
+        }
+      } catch(e) {}
+    }
+
+    // Load posts
+    async function loadPosts() {
+      try {
+        const resp = await fetch('/posts.json');
+        allPosts = await resp.json();
+        // Sort by date desc
+        allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Build category tabs
+        const cats = [...new Set(allPosts.map(p => p.category).filter(Boolean))];
+        const tabsContainer = document.getElementById('category-tabs');
+        cats.forEach(cat => {
+          const btn = document.createElement('button');
+          btn.className = 'cat-btn';
+          btn.dataset.cat = cat;
+          btn.textContent = cat;
+          btn.addEventListener('click', () => filterByCategory(cat));
+          tabsContainer.appendChild(btn);
+        });
+
+        // Check URL param for category
+        const params = new URLSearchParams(window.location.search);
+        const catParam = params.get('cat');
+        if (catParam && cats.includes(catParam)) {
+          filterByCategory(catParam);
+        } else {
+          filterByCategory('all');
+        }
+      } catch(e) {
+        document.getElementById('posts-grid').innerHTML = '';
+        document.getElementById('empty-state').style.display = 'block';
+      }
+    }
+
+    function filterByCategory(cat) {
+      currentCategory = cat;
+      currentPage = 1;
+
+      // Update active tab
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.cat === cat);
+      });
+
+      // Filter posts
+      if (cat === 'all') {
+        filteredPosts = [...allPosts];
+      } else {
+        filteredPosts = allPosts.filter(p => p.category === cat);
+      }
+
+      renderPosts();
+      renderPagination();
+    }
+
+    function renderPosts() {
+      const grid = document.getElementById('posts-grid');
+      const emptyState = document.getElementById('empty-state');
+      const start = (currentPage - 1) * POSTS_PER_PAGE;
+      const pagePosts = filteredPosts.slice(start, start + POSTS_PER_PAGE);
+
+      if (pagePosts.length === 0) {
+        grid.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      grid.innerHTML = pagePosts.map(post => {
+        const dateStr = post.date ? new Date(post.date).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '';
+        const imgHtml = post.image
+          ? `<img src="${post.image}" alt="${post.title}" class="post-card-img" loading="lazy">`
+          : `<div class="post-card-img-placeholder"><i class="fas fa-newspaper"></i></div>`;
+
+        return `
+          <div class="col-md-6 col-lg-4">
+            <a href="${post.url}" class="text-decoration-none">
+              <div class="post-card">
+                ${imgHtml}
+                <div class="post-card-body">
+                  ${post.category ? `<span class="post-card-category">${post.category}</span>` : ''}
+                  <h3 class="post-card-title">${post.title}</h3>
+                  <p class="post-card-desc">${post.description || ''}</p>
+                  <div class="post-card-meta">
+                    <span><i class="fas fa-calendar-alt"></i> ${dateStr}</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderPagination() {
+      const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+      const pagination = document.getElementById('pagination');
+
+      if (totalPages <= 1) {
+        pagination.innerHTML = '';
+        return;
+      }
+
+      let html = '';
+      html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}"><a class="page-link" href="#" onclick="goToPage(${currentPage - 1});return false;"><i class="fas fa-chevron-left"></i></a></li>`;
+      for (let i = 1; i <= totalPages; i++) {
+        html += `<li class="page-item ${i === currentPage ? 'active' : ''}"><a class="page-link" href="#" onclick="goToPage(${i});return false;">${i}</a></li>`;
+      }
+      html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}"><a class="page-link" href="#" onclick="goToPage(${currentPage + 1});return false;"><i class="fas fa-chevron-right"></i></a></li>`;
+      pagination.innerHTML = html;
+    }
+
+    function goToPage(page) {
+      const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderPosts();
+      renderPagination();
+      window.scrollTo({ top: document.querySelector('.posts-grid').offsetTop - 100, behavior: 'smooth' });
+    }
+
+    // Init
+    loadMenu();
+    loadPosts();
+
+    // Delegate click for category tabs
+    document.getElementById('category-tabs').addEventListener('click', e => {
+      if (e.target.classList.contains('cat-btn')) {
+        filterByCategory(e.target.dataset.cat);
+      }
+    });
+  </script>
+</body>
+</html>
